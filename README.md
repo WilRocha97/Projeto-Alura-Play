@@ -12,4 +12,4 @@ feito um curso.
 ### LinkeIn: https://www.linkedin.com/in/willian-rodrigues-a623b6248/
 
 
-![AluraPlay.png](https://github.com/WilRocha97/Portfolio/assets/AluraPlay.png)
+![AluraPlay.png](https://github.com/WilRocha97/Meu-site/Portfolio/assets/AluraPlay.png)
