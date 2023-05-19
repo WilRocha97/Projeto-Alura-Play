@@ -8,8 +8,5 @@ feito um curso.
 
 ## Feito por
 ### Willian Rodrigues
-### Site: https://willian-rodrigues.vercel.app
-### LinkeIn: https://www.linkedin.com/in/willian-rodrigues-a623b6248/
 
-
-![Alura Play](https://github.com/WilRocha97/Meu-site/blob/b407af7c14f23a0e24cb11db94b6c0b93e79911b/Portfolio/assets/AluraPlay.png)
+![Alura Play](https://github.com/WilRocha97/Portifolio/blob/main/assets/Sites/AluraPlay.png)
