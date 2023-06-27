@@ -21,9 +21,13 @@ export default function constroiCard(titulo, descricao, url, imagem) {
 
 // para cada vídeo na lista da pi constroi um elemento filho na lista de vídeos da página
 async function listaVideo() {
-    const listaApi = await conectaApi.listaVideos();
-    listaApi.forEach(element => lista.appendChild(
-        constroiCard(element.titulo, element.descricao, element.url, element.imagem,)));
+    try {
+        const listaApi = await conectaApi.listaVideos();
+        listaApi.forEach(element => lista.appendChild(
+            constroiCard(element.titulo, element.descricao, element.url, element.imagem,)));
+        } catch {
+            lista.innerHTML = `<h2 class="mensagem__titulo">Não foi possível carregar os vídeos :(</h2>`
+        }
 }
 
 listaVideo()
