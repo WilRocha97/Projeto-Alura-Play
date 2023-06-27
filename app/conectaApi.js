@@ -1,9 +1,11 @@
+//busca vídeos na API
 async function listaVideos() {
     const conexao = await fetch("http://localhost:3000/videos");
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida
 }
 
+// cria um novo card com o vídeo enviado pelo usuário
 async function criaVideo(titulo, descricao, url, imagem) {
     const conexao = await fetch("http://localhost:3000/videos", {
         method: "POST",
@@ -22,6 +24,7 @@ async function criaVideo(titulo, descricao, url, imagem) {
     return conexaoConvertida;
 }
 
+// realiza a busca na api
 async function buscaVideo(termoDeBusca) {
     const conexao = await fetch(`http://localhost:3000/videos?q=${termoDeBusca}`);
     const conexaoConvertida = await conexao.json();

@@ -2,6 +2,7 @@ import { conectaApi } from "./conectaApi.js";
 
 const lista = document.querySelector("[data-lista]");
 
+// constroi um card para o vídeo
 export default function constroiCard(titulo, descricao, url, imagem) {
     const video = document.createElement("li")
     video.className = "video__item";
@@ -18,6 +19,7 @@ export default function constroiCard(titulo, descricao, url, imagem) {
     return video;
 }
 
+// para cada vídeo na lista da pi constroi um elemento filho na lista de vídeos da página
 async function listaVideo() {
     const listaApi = await conectaApi.listaVideos();
     listaApi.forEach(element => lista.appendChild(

@@ -9,10 +9,12 @@ evento.preventDefault();
 
     const lista = document.querySelector("[data-lista]")
     
+    //limpa a lista de vídeos
     while (lista.firstChild) {
         lista.removeChild(lista.firstChild)
     }
 
+    // exibe a lista personalizada com os resultados da busca
     busca.forEach(elemento => lista.appendChild(constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)));
 }
 
