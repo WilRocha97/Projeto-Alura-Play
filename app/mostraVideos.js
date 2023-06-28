@@ -26,7 +26,7 @@ async function listaVideo() {
         listaApi.forEach(element => lista.appendChild(
             constroiCard(element.titulo, element.descricao, element.url, element.imagem,)));
         } catch {
-            lista.innerHTML = `<h2 class="mensagem__titulo">Não foi possível carregar os vídeos :(</h2>`
+            lista.innerHTML = `<h2 class="mensagem__titulo">Não foi possível carregar os vídeos :( (Este site usa um servidor local com a API dos vídeos)</h2>`
         }
 }
 
