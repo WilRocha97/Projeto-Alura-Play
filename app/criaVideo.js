@@ -13,7 +13,7 @@ async function criarVideo(evento) {
     //adiciona um novo vídeo na lista da api para exibir na tela inicial
     //desabilitado para evitar conteúdo sensivel
     try {
-        //await conectaApi.criaVideo(titulo, descricao, url, imagem);
+        await conectaApi.criaVideo(titulo, descricao, url, imagem);
         window.location.href = "../pages/envio-concluido.html";
     } catch (e) {
         window.location.href = "../pages/envio-falhou.html";
